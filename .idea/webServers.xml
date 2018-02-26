@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="2e004279-bde1-4d0f-8e9b-304d1a15e570" name="contact" url="https://bootcamp-coders.cnm.edu/~jbrink1/contact">
+        <fileTransfer host="bootcamp-coders.cnm.edu" port="22" rootFolder="/home/jbrink1/public_html/contact" accessType="SFTP" authAgent="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

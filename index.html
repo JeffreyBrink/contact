@@ -6,12 +6,11 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Bootstrap Contact Form Template</title>
+        <title>Bootstrap Contact Form Tutorial</title>
 
         <!-- CSS -->
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
-        <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/form-elements.css">
         <link rel="stylesheet" href="assets/css/style.css">
 
@@ -33,53 +32,18 @@
 
     <body>
 
-		<!-- Top menu -->
-		<nav class="navbar navbar-inverse navbar-no-bg" role="navigation">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="index.html">Bootstrap Contact Form Template</a>
-				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="top-navbar-1">
-					<ul class="nav navbar-nav navbar-right">
-						<li>
-							<span class="li-text">
-								Put some text or
-							</span> 
-							<a href="#"><strong>links</strong></a> 
-							<span class="li-text">
-								here, or some icons: 
-							</span> 
-							<span class="li-social">
-								<a href="#"><i class="fa fa-facebook"></i></a> 
-								<a href="#"><i class="fa fa-twitter"></i></a> 
-								<a href="#"><i class="fa fa-envelope"></i></a> 
-								<a href="#"><i class="fa fa-skype"></i></a>
-							</span>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-
-        <!-- Top content -->
+		<!-- Top content -->
         <div class="top-content">
         	
             <div class="inner-bg">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-8 col-sm-offset-2 text">
-                            <h1><strong>Bootstrap</strong> Contact Form</h1>
+                            <h1>Bootstrap Contact Form Tutorial</h1>
                             <div class="description">
                             	<p>
-	                            	This is a free responsive contact form made with Bootstrap. 
-	                            	Download it on <a href="http://azmind.com"><strong>AZMIND</strong></a>, customize and use it as you like!
+	                            	Learn how to create a working Bootstrap contact form using PHP, jQuery, AJAX, HTML5 and CSS3. 
+	                            	Check it out on <a href="http://azmind.com">AZMIND</a>!
                             	</p>
                             </div>
                         </div>
@@ -87,13 +51,8 @@
                     <div class="row">
                         <div class="col-sm-6 col-sm-offset-3 form-box">
                         	<div class="form-top">
-                        		<div class="form-top-left">
-                        			<h3>Contact us</h3>
-                            		<p>Fill in the form below to send us a message:</p>
-                        		</div>
-                        		<div class="form-top-right">
-                        			<i class="fa fa-envelope"></i>
-                        		</div>
+                    			<h3>Contact us</h3>
+                        		<p>Fill in the form below to send us a message:</p>
                             </div>
                             <div class="form-bottom contact-form">
 			                    <form role="form" action="assets/contact.php" method="post">
@@ -108,6 +67,10 @@
 			                        <div class="form-group">
 			                        	<label class="sr-only" for="contact-message">Message</label>
 			                        	<textarea name="message" placeholder="Message..." class="contact-message form-control" id="contact-message"></textarea>
+			                        </div>
+			                        <div class="form-group">
+			                        	<label for="contact-antispam">Antispam question: 7 + 5 = ?</label>
+			                        	<input type="text" name="antispam" placeholder="Your answer..." class="contact-antispam form-control" id="contact-antispam">
 			                        </div>
 			                        <button type="submit" class="btn">Send message</button>
 			                    </form>
@@ -124,7 +87,6 @@
         <script src="assets/js/jquery-1.11.1.min.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
         <script src="assets/js/jquery.backstretch.min.js"></script>
-        <script src="assets/js/retina-1.1.0.min.js"></script>
         <script src="assets/js/scripts.js"></script>
         
         <!--[if lt IE 10]>

@@ -8,13 +8,14 @@ function isEmail($email) {
 if($_POST) {
 
     // Enter the email where you want to receive the message
-    $emailTo = 'jeffreybrink@gmx.com';
+    $emailTo = 'contact.azmind@gmail.com';
 
     $clientEmail = addslashes(trim($_POST['email']));
     $subject = addslashes(trim($_POST['subject']));
     $message = addslashes(trim($_POST['message']));
+    $antispam = addslashes(trim($_POST['antispam']));
 
-    $array = array('emailMessage' => '', 'subjectMessage' => '', 'messageMessage' => '');
+    $array = array('emailMessage' => '', 'subjectMessage' => '', 'messageMessage' => '', 'antispamMessage' => '');
 
     if(!isEmail($clientEmail)) {
         $array['emailMessage'] = 'Invalid email!';
@@ -25,10 +26,13 @@ if($_POST) {
     if($message == '') {
         $array['messageMessage'] = 'Empty message!';
     }
-    if(isEmail($clientEmail) && $subject != '' && $message != '') {
+    if($antispam != '12') {
+    	$array['antispamMessage'] = 'Wrong antispam answer!';
+    }
+    if(isEmail($clientEmail) && $subject != '' && $message != '' && $antispam == '12') {
         // Send email
 		$headers = "From: " . $clientEmail . " <" . $clientEmail . ">" . "\r\n" . "Reply-To: " . $clientEmail;
-		mail($emailTo, $subject . " (bootstrap contact form)", $message, $headers);
+		mail($emailTo, $subject . " (bootstrap contact form tutorial)", $message, $headers);
     }
 
     echo json_encode($array);
